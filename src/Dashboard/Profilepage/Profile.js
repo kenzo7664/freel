@@ -3,7 +3,7 @@ import Man from '../../Images/man.jpg'
 
 const Profile = () => {
  return (
-   <div className='flex justify-between h-48 border-b-2   border-gray-200'>
+   <div className='flex justify-between h-48 border-b-2 sm:border-b-0   border-gray-200'>
      <div className='flex p-4'>
        <div>
          <img src={Man} alt='' className=' h-36 rounded-full' />
@@ -12,7 +12,7 @@ const Profile = () => {
          <h1 className='font-bold text-black'>Maciej Zackoscheiny, 39 , M</h1>
          <h2>Pomorska, 55/9, Wroclaw</h2>
          <h2>Poland</h2>
-         <div className='flex flex-row'>
+         <div className='flex flex-row sm:flex-col'>
            <h2>03/06/1956</h2>
            <h2 className='ml-2'>+49 7736 7898</h2>
            <h2 className='ml-2'>maciejz@gmail.com</h2>
@@ -27,7 +27,7 @@ const Profile = () => {
          </div>
        </div>
      </div>
-     <div className='pt-4 flex flex-row '>
+     <div className='pt-4 flex flex-row sm:hidden '>
        <div className='border border-yellow-500 w-36 p-2 m-2 rounded-md bg-yellow-300'>
          <h2>-wt: 22/02/2020</h2>
          <h2>140lbs</h2>

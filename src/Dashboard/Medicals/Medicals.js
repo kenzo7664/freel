@@ -8,13 +8,18 @@ import {
   BsFillFlagFill,
 } from "react-icons/bs";
 import { IoIosAttach } from "react-icons/io";
-import { BiStar } from "react-icons/bi";
+import { BiStar,BiCheckboxSquare } from "react-icons/bi";
+import { AiOutlinePlusSquare } from "react-icons/ai";
+import { MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos,MdOutlineArrowDropUp,MdOutlineArrowDropDown} from "react-icons/md";
+import { IconContext } from "react-icons";
+
+
 const Medicals = () => {
  return (
    <div className="border-l-2 border-gray-200">
-     <div className='m-4 flex flex-row justify-between  '>
-       <div className='border border-white rounded-lg w-3/5 shadow-xl'>
-         <div className='flex justify-between p-4 border-b-2 border-gray-200'>
+     <div className='m-4 flex flex-row justify-between sm:flex-col '>
+       <div className='border border-white rounded-lg w-4/5 shadow-xl sm:mt-52'>
+         <div className='flex justify-between p-4 border-b-2 border-gray-200 '>
            <h1 className='font-bold'>Maceij Zakoscielny, 39, M</h1>
            <div className='flex flex-row justify-evenly'>
              <h3 className='mr-2'>Status</h3>
@@ -28,43 +33,43 @@ const Medicals = () => {
              </label>
            </div>
          </div>
-         <div className='flex '>
+         <div className='flex sm:flex-col '>
            <div>
-             <div className='border border-gray-500 rounded-md flex flex-row p-2 w-80 m-4'>
+             <div className='border border-gray-500 rounded-md flex flex-row p-2 w-auto m-4'>
                Provider
                <BsDot className='m-2' />
                <FaSearch className='m-2' />
                <label for='cars'></label>
-               <select className='w-48'>
+               <select className='w-60'>
                  <option>Elijah Manning</option>
                </select>
              </div>
-             <div className='border border-gray-500 rounded-md flex flex-row p-2 w-80 m-4'>
+             <div className='border border-gray-500 rounded-md flex flex-row p-2 w-auto m-4'>
                Facility
                <BsDot className='m-2' />
                <FaSearch className='m-2' />
                <label for='cars'></label>
-               <select className='w-48'>
+               <select className='w-60'>
                  <option>New Scot Clinic</option>
                </select>
              </div>
            </div>
            <div>
-             <div className='border border-gray-500 rounded-md flex flex-row p-2 w-80 m-4'>
+             <div className='border border-gray-500 rounded-md flex flex-row p-2 w-auto m-4'>
                Assigned
                <BsDot className='m-2' />
                <FaSearch className='m-2' />
                <label for='cars'></label>
-               <select className='w-48'>
+               <select className='w-60'>
                  <option>New Scot Clinic</option>
                </select>
              </div>
-             <div className='border border-gray-500 rounded-md flex flex-row p-2 w-80 m-4'>
+             <div className='border border-gray-500 rounded-md flex flex-row p-2 w-auto m-4'>
                Laboratory
                <BsDot className='m-2' />
                <FaSearch className='m-2' />
                <label for='cars'></label>
-               <select className='w-48'>
+               <select className='w-60'>
                  <option>Lipid Panel</option>
                </select>
              </div>
@@ -165,7 +170,74 @@ const Medicals = () => {
            </div>
          </div>
        </div>
-       <div className='border border-black w-auto'> gjyukjhgvuhjbnmvjhgkm,</div>
+       <div className='border border-white rounded-lg w-2/6 shadow-xl ml-4'>
+       <div className='  border-b-2 border-gray-200'>
+          <div className='grid  grid-cols-5  p-4 font-semibold text-gray-500  cursor-pointer    '>
+            <h2 className='hover:text-blue-700 cursor-pointer hover:border-b-2 border-blue-700  '>
+              Overview
+            </h2>
+            <h2 className='hover:text-blue-700 hover:border-b-2 border-blue-700 ml-4 '>
+              DRTLM
+            </h2>
+            <h2 className='hover:text-blue-700 hover:border-b-2 border-blue-700 ml-4 '>
+              History
+            </h2>
+            <div className ="flex justify-end pt-1">
+            <MdOutlineArrowBackIosNew className="hover:bg-gray-300 cursor-pointer rounded-2xl" />
+            < MdOutlineArrowForwardIos className="hover:bg-gray-300 cursor-pointer rounded-2xl" />
+            </div>
+            
+            
+          
+          </div>
+          
+         </div>
+         <h1 className="pt-2  pl-6 text-gray-400">Maceij Zakoscielny, 39, M as of 31/02/2020</h1>
+         <div className="border border-white bg-blue-50 m-4 rounded-md ">
+           <div className="pt-4 pl-4 pb-2  flex justify-between border-b-2 border-gray-300">
+             <h1 className="font-bold">Global Alerts</h1>
+             <MdOutlineArrowDropUp className="cursor-pointer" size={25}/>
+           </div>
+           <div className="flex p-4">
+           <IconContext.Provider value={{ color: "#0000ff" }}>
+           < BiCheckboxSquare className="" size={25} />
+           </IconContext.Provider>
+           <h1>Fasting</h1>
+           </div>
+         </div>
+         <div className="flex justify-between pr-4">
+          <h1 className="pt-2  pl-6 font-bold">CCM</h1>
+          <h1 className="text-gray-400 flex pt-2">Time Completed:00:21 </h1>
+          <MdOutlineArrowDropDown size={30} className="pt-1 cursor-pointer" />
+         </div>
+         <div className="border border-white bg-blue-50 m-4 rounded-md ">
+           <div className="pt-4 pl-4 pb-2   flex justify-between border-b-2 border-gray-300">
+             <h1 className="font-bold">Advanced Directives</h1>
+             <MdOutlineArrowDropUp className="cursor-pointer" size={25} />
+           </div>
+           <div className="flex p-4">
+           <IconContext.Provider value={{ color: "#0000ff" }}>
+           < BiCheckboxSquare className="" size={25} />
+           </IconContext.Provider>
+           <h1>LW</h1>
+           <h1 className="pl-6 text-gray-400">Living Will</h1>
+           </div>
+         </div>
+         <div className="border border-white bg-blue-50 m-4 rounded-md ">
+           <div className="pt-4 pl-4 pb-2   flex justify-between border-b-2 border-gray-300">
+             <h1 className="font-bold">Problem List</h1>
+             <MdOutlineArrowDropUp className="cursor-pointer" size={25} />
+           </div>
+           <div className="flex p-4">
+           <IconContext.Provider value={{ color: "#0000ff" }}>
+           < AiOutlinePlusSquare className="" size={20} />
+           </IconContext.Provider>
+           <h1 className="text-red-400 pl-4">9</h1>
+           <h1 className="pl-4">498.2</h1>
+           <h1 className="pl-6 text-gray-400">COPD</h1>
+           </div>
+         </div>
+       </div>
      </div>
    </div>
  );
