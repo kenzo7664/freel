@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tabs = () => {
  return (
-   <div className='grid grid-cols-11 sm:grid-cols-1 p-4 font-semibold text-gray-500  cursor-pointer h-16 border-b-2   border-gray-200 sm:border-b-0 shadow-lg sm:shadow-none '>
+   <div className='grid grid-cols-11 sm:gap-y-4 sm:grid-cols-2 ms:grid-cols-4 ms:gap-y-2 ms:mt-4 sm:mt-12 sm:p-10 p-4 md:grid-cols-5 md:mt-48 lg:grid-cols-11 font-semibold text-gray-500  cursor-pointer h-16 border-b-2   border-gray-200 sm:border-b-0 ms:border-b-0 md:border-b-0 shadow-lg sm:shadow-none ms:shadow-none md:shadow-none '>
      <h2 className='hover:text-blue-700 cursor-pointer hover:border-b-4 sm:w-20 border-blue-700'>
        Medical Summary
      </h2>

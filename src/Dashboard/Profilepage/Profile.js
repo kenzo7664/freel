@@ -3,19 +3,19 @@ import Man from '../../Images/man.jpg'
 
 const Profile = () => {
  return (
-   <div className='flex justify-between h-48 border-b-2 sm:border-b-0   border-gray-200'>
+   <div className='xl:flex lg:flex xl:justify-between h-56 lg:h-auto border-b-2 sm:border-b-0 ms:border-b-0  border-gray-200'>
      <div className='flex p-4'>
        <div>
          <img src={Man} alt='' className=' h-36 rounded-full' />
        </div>
-       <div className='p-4 text-gray-500'>
+       <div className='p-4 text-gray-500 sm:p-2'>
          <h1 className='font-bold text-black'>Maciej Zackoscheiny, 39 , M</h1>
          <h2>Pomorska, 55/9, Wroclaw</h2>
          <h2>Poland</h2>
-         <div className='flex flex-row sm:flex-col'>
+         <div className='flex flex-row sm:flex-col ms:flex-col lg:flex-col'>
            <h2>03/06/1956</h2>
-           <h2 className='ml-2'>+49 7736 7898</h2>
-           <h2 className='ml-2'>maciejz@gmail.com</h2>
+           <h2 className='ml-2 sm:m-0 ms:m-0 lg:m-0'>+49 7736 7898</h2>
+           <h2 className='ml-2 sm:m-0 ms:m-0 lg:m-0'>maciejz@gmail.com</h2>
          </div>
          <div className='flex flex-row'>
            <h1 className='text-blue-600 border-white rounded-md p-1 w-auto hover:bg-blue-200 cursor-pointer'>
@@ -27,7 +27,7 @@ const Profile = () => {
          </div>
        </div>
      </div>
-     <div className='pt-4 flex flex-row sm:hidden '>
+     <div className='pt-4 flex flex-row sm:hidden ms:hidden '>
        <div className='border border-yellow-500 w-36 p-2 m-2 rounded-md bg-yellow-300'>
          <h2>-wt: 22/02/2020</h2>
          <h2>140lbs</h2>

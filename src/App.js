@@ -6,7 +6,7 @@ import Dashboard from "./Dashboard/Dashboard";
 function App() {
   return (
     <div className='App'>
-      <div className='flex justify-between border-b-2 border-gray-500'>
+      <div className='flex justify-between p-4 border-b-2 sm:w-full border-gray-300'>
         <div className='flex flex-row m-1'>
           <FaBars className='m-1' />
           <h1 className='font-semibold'>Cleo EMR</h1>
