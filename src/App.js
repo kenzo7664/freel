@@ -13,7 +13,7 @@ function App() {
         </div>
         <div className='flex flex-row m-1'>
           <FaTh className='m-1' />
-          <img src={circle} alt='' className='w-7 rounded-3xl m-0.5' />
+          <img src={circle} alt='' className='w-7 h-auto rounded-3xl m-0.5' />
         </div>
       </div>
       <Dashboard />
