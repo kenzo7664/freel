@@ -21,9 +21,9 @@ import { IconContext } from "react-icons";
 const Medicals = () => {
   return (
     <div className='border-l-2 border-gray-200 '>
-      <div className='m-4 flex flex-row justify-between sm:flex-col ms:flex-col md:flex-col ms:w-20 sm:w-auto ms:w-auto md:w-auto  '>
-        <div className='border border-white rounded-lg xl:w-4/5 shadow-xl sm:mt-64 ms:mt-28 md:mt-14 lg:w-T '>
-          <div className='xl:flex lg:flex md:flex lg:w-auto justify-between xl:p-4 lg:p-4 md:p-4 border-b-2 border-gray-200 '>
+      <div className='m-4 flex flex-row justify-between sm:flex-col ms:flex-col md:flex-col mx:flex-col ms:w-20 sm:w-auto ms:w-auto md:w-auto mx:w-auto '>
+        <div className='border border-white rounded-lg xl:w-4/5 shadow-xl sm:mt-64 ms:mt-28 md:mt-14 mx:mt-14 lg:w-T '>
+          <div className='xl:flex lg:flex md: mx:flex mx:p-4 lg:w-auto justify-between xl:p-4 lg:p-4 md:p-4 border-b-2 border-gray-200 '>
             <h1 className='font-bold ms:pl-24'>Maceij Zakoscielny, 39, M</h1>
             <div className='flex flex-row sm:flex-col justify-evenly'>
               <h3 className='mr-2 sm:mt-4'>Status:</h3>
@@ -37,14 +37,14 @@ const Medicals = () => {
               </label>
             </div>
           </div>
-          <div className='flex sm:flex-col ms:flex-col md:flex-col '>
+          <div className='flex sm:flex-col ms:flex-col md:flex-col mx:flex-col '>
             <div>
               <div className='border border-gray-500 rounded-md flex flex-row  p-2 w-auto  m-4 lg:w-72'>
                 Provider:
                 <BsDot className='m-2 sm:hidden' />
                 <FaSearch className='m-2 sm:hidden' />
                 <label for='cars'></label>
-                <select className='w-60 sm:w-28 ms:w-auto md:w-full lg:w-20'>
+                <select className='w-60 sm:w-28 ms:w-auto mx:w-full sm:ml-1 md:w-full lg:w-20'>
                   <option>Elijah Manning</option>
                 </select>
               </div>
@@ -53,7 +53,7 @@ const Medicals = () => {
                 <BsDot className='m-2 sm:hidden' />
                 <FaSearch className='m-2 sm:hidden' />
                 <label for='cars'></label>
-                <select className='w-60 sm:w-28 ms:w-auto md:w-full'>
+                <select className='w-60 sm:w-28 sm:ml-1 ms:w-auto mx:w-full md:w-full'>
                   <option>New Scot Clinic</option>
                 </select>
               </div>
@@ -64,7 +64,7 @@ const Medicals = () => {
                 <BsDot className='m-2 sm:hidden' />
                 <FaSearch className='m-2 sm:hidden' />
                 <label for='cars'></label>
-                <select className='w-60 sm:w-28 ms:w-auto md:w-full'>
+                <select className='w-60 sm:w-28 sm:ml-1 ms:w-auto mx:w-full md:w-full'>
                   <option>New Scot Clinic</option>
                 </select>
               </div>
@@ -73,12 +73,12 @@ const Medicals = () => {
                 <BsDot className='m-2 sm:hidden' />
                 <FaSearch className='m-2 sm:hidden' />
                 <label for='cars'></label>
-                <select className='w-60 sm:w-28 ms:w-auto md:w-full'>
+                <select className='w-60 sm:w-28 sm:ml-1 ms:w-auto mx:w-full md:w-full'>
                   <option>Lipid Panel</option>
                 </select>
               </div>
             </div>
-            <BiStar className='mt-8 sm:hidden ms:hidden md:hidden' />
+            <BiStar className='mt-8 sm:hidden ms:hidden md:hidden mx:hidden' />
           </div>
           <div className='flex flex-row sm:flex-col border-b-2 border-gray-200 md:pl-12 md:pb-4'>
             <div className='flex items-center ml-4'>
@@ -174,7 +174,7 @@ const Medicals = () => {
             </div>
           </div>
         </div>
-        <div className='border border-white rounded-lg w-2/6 sm:w-auto ms:w-auto md:w-auto shadow-xl xl:ml-4 lg:ml-2 sm:mt-4 ms:mt-4 md:mt-4'>
+        <div className='border border-white rounded-lg w-2/6 sm:w-auto ms:w-auto md:w-auto mx:w-auto shadow-xl xl:ml-4 lg:ml-2 sm:mt-4 ms:mt-4 md:mt-4 mx:mt-4'>
           <div className='  border-b-2 border-gray-200'>
             <div className='grid  grid-cols-5 sm:grid-cols-1 lg:gap-x-12   p-4 font-semibold text-gray-500  cursor-pointer    '>
               <h2 className='hover:text-blue-700 cursor-pointer hover:border-b-2 border-blue-700  '>
@@ -192,7 +192,7 @@ const Medicals = () => {
               </div>
             </div>
           </div>
-          <h1 className='pt-2  xl:pl-6 ms:pl-6 md:pl-6   text-gray-400'>
+          <h1 className='pt-2  xl:pl-6 ms:pl-6 md:pl-6 mx:pl-6   text-gray-400'>
             Maceij Zakoscielny, 39, M as of 31/02/2020
           </h1>
           <div className='border border-white bg-blue-50 m-4 rounded-md '>
@@ -208,7 +208,7 @@ const Medicals = () => {
             </div>
           </div>
           <div className='flex justify-between pr-4'>
-            <h1 className='pt-2  xl:pl-6 ms:pl-6 md:pl-6  font-bold'>CCM</h1>
+            <h1 className='pt-2  xl:pl-6 ms:pl-6 md:pl-6 mx:pl-6  font-bold'>CCM</h1>
             <h1 className='text-gray-400 flex pt-2 sm:ml-1 lg:ml-1  '>
               Time Completed:00:21{" "}
             </h1>
