@@ -3,7 +3,7 @@ import Man from '../../Images/man.jpg'
 
 const Profile = () => {
  return (
-   <div className='xl:flex lg:flex xl:justify-between h-56 lg:h-auto border-b-2 sm:border-b-0 ms:border-b-0  border-gray-200'>
+   <div className='xl:flex lg:flex xl:justify-between h-56 lg:h-auto border-b-2 sm:border-b-0 ms:border-b-0 md:border-b-0  border-gray-200'>
      <div className='flex p-4'>
        <div>
          <img src={Man} alt='' className=' h-36 rounded-full' />
